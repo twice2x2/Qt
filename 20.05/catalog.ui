@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Catalog</class>
+ <widget class="QDialog" name="Catalog">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>520</width><height>420</height></rect>
+  </property>
+  <property name="windowTitle"><string>Каталог товаров</string></property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing"><number>0</number></property>
+   <property name="margin"><number>0</number></property>
+   <item>
+    <widget class="QLabel" name="lblHeader">
+     <property name="text"><string>Каталог товаров</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+     <property name="minimumHeight"><number>50</number></property>
+     <property name="styleSheet"><string>background-color: #2c3e50; color: white; font-size: 17px; font-weight: bold;</string></property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="bodyWidget">
+     <property name="styleSheet"><string>background-color: #f5f5f5;</string></property>
+     <layout class="QHBoxLayout" name="bodyLayout">
+      <property name="spacing"><number>20</number></property>
+      <item>
+       <widget class="QLabel" name="lblPhoto">
+        <property name="minimumSize"><size><width>200</width><height>200</height></size></property>
+        <property name="maximumSize"><size><width>220</width><height>220</height></size></property>
+        <property name="frameShape"><enum>QFrame::Box</enum></property>
+        <property name="scaledContents"><bool>true</bool></property>
+        <property name="alignment"><set>Qt::AlignCenter</set></property>
+        <property name="styleSheet"><string>border: 2px solid #bdc3c7; background-color: white;</string></property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="infoLayout">
+        <property name="spacing"><number>12</number></property>
+        <item>
+         <widget class="QLabel" name="lblName">
+          <property name="text"><string>Ноутбук ThinkPad X1</string></property>
+          <property name="styleSheet"><string>font-size: 15px; font-weight: bold; color: #2c3e50;</string></property>
+          <property name="wordWrap"><bool>true</bool></property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblDesc">
+          <property name="text"><string>Процессор: Intel Core i7&#xa;ОЗУ: 16 ГБ&#xa;Накопитель: 512 ГБ SSD&#xa;Экран: 14&quot;, IPS, 2K</string></property>
+          <property name="styleSheet"><string>font-size: 12px; color: #555555;</string></property>
+          <property name="wordWrap"><bool>true</bool></property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblPrice">
+          <property name="text"><string>79 990 руб.</string></property>
+          <property name="styleSheet"><string>font-size: 18px; font-weight: bold; color: #e74c3c;</string></property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="vertSpacer">
+          <property name="orientation"><enum>Qt::Vertical</enum></property>
+          <property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnOrder">
+          <property name="text"><string>Оформить заказ</string></property>
+          <property name="minimumSize"><size><width>140</width><height>36</height></size></property>
+          <property name="styleSheet"><string>QPushButton { background-color: #27ae60; color: white; border: none; border-radius: 4px; font-size: 13px; } QPushButton:hover { background-color: #2ecc71; } QPushButton:pressed { background-color: #1e8449; }</string></property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="footerWidget">
+     <property name="minimumHeight"><number>46</number></property>
+     <property name="styleSheet"><string>background-color: #ecf0f1; border-top: 1px solid #bdc3c7;</string></property>
+     <layout class="QHBoxLayout" name="footerLayout">
+      <property name="spacing"><number>8</number></property>
+      <item>
+       <widget class="QPushButton" name="btnBack">
+        <property name="text"><string>Назад</string></property>
+        <property name="minimumSize"><size><width>80</width><height>30</height></size></property>
+        <property name="styleSheet"><string>QPushButton { background-color: #95a5a6; color: white; border: none; border-radius: 4px; font-size: 12px; } QPushButton:hover { background-color: #7f8c8d; }</string></property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="footerSpacer">
+        <property name="orientation"><enum>Qt::Horizontal</enum></property>
+        <property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
